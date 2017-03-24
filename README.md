@@ -93,7 +93,7 @@ the website name
 * REMEMBER when you're on post.hbs you can call this information with {{model.whatever}} this
   route handler is getting information directly from the model.
 * Create a post-detail ($ ember g component post-detail)
-* It needs a path to be visible on routes/post so don't forget {{post-detail post=model}}
+* It needs a path to be visible on routes/post so don't forget to render {{post-detail post=model}}
 * Set up post-detail.hbs, refactor some code and move the delete button over here
 * Add to the actions: delete in post-detail.js
 _* Only the action helper {{savePost}} should be on index.hbs at this point*_

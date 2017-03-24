@@ -1,17 +1,17 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  updatePostForm: false,
+  // updatePostForm: false,
 
-  actions: {
-    delete(post){
-      if(confirm('Are you sure you want to delete this question?')){
-        this.sendAction('destroyPost', post);
-      }
-    },
-
-    update(post, params){
-      this.sendAction('update', post, params);
-    }
-  }
+  // actions: {
+  //   delete(post){
+  //     if(confirm('Are you sure you want to delete this question?')){
+  //       this.sendAction('destroyPost', post);
+  //     }
+  //   },
+  //
+  //   update(post, params){
+  //     this.sendAction('update', post, params);
+  //   }
+  // }
 });

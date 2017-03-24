@@ -1,5 +1,5 @@
+{{#link-to 'post' post.id}}
 <div class="well holder">
-  {{post.date}}
 <div class="well">
   <li>
   <div class="col-lg-6">
@@ -10,6 +10,7 @@
   </div>
 </li>
 </div>
-<button {{action 'delete' post}}>Delete Post</button>
-{{update-post update='update' post=post}}
+<!-- <button {{action 'delete' post}}>Delete Post</button> -->
+<!-- {{update-post update='update' post=post}} -->
 </div>
+{{/link-to}}
