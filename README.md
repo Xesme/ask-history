@@ -97,19 +97,19 @@ the website name
 * Set up post-detail.hbs, refactor some code and move the delete button over here
 * Add to the actions: delete in post-detail.js
 _* Only the action helper {{savePost}} should be on index.hbs at this point*_
-* Add a new model for comments ($ ember g model comments)
+* Add a new model for answers ($ ember g model answer)
 * Refactor the exports findAll() in index.js
-* Add comments to project.json file and import it to Firebase
+* Add answers to project.json file and import it to Firebase
 * Start by pulling the model through index.hbs to make sure your are accessing the  
   information correctly before creating components and refactoring (This serves as a tool don't skip it)
-* Add compnent new-comment ($ ember g component new-comment)
-* Add form for new comment (with hide and show!)
-* Add to actions: saveComment( with params )
+* Add compnent new-answer ($ ember g component new-answer)
+* Add form for new answer (with hide and show!)
+* Add to actions: saveAnswer ( with params )
 * Add to actions in index.js, so it can be save to the models
 * Actions up! it needs to be added to index.hbs too
 * Add async in both models to join them
 * Implement refactor to .hbs
-* Implement comment deletion
+* Implement answer deletion
 * Implement Styling
 
 
