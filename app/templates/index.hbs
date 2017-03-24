@@ -5,8 +5,17 @@
 
 <h2>Recent Questions:</h2>
 <ul>
-  {{#each model as |post|}}
+  {{#each model.posts as |post|}}
     {{post-tile post=post}}
   {{/each}}
+</ul>
 
+<ul>
+  {{#each model.answers as |answer|}}
+  <div class="well">
+    {{answer.author}}
+    <hr>
+    {{answer.comment}}
+  </div>
+  {{/each}}
 </ul>
