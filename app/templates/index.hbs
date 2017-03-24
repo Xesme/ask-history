@@ -9,7 +9,7 @@
     {{post-tile post=post}}
   {{/each}}
 </ul>
-
+{{new-answer saveAnswer="saveAnswer"}}
 <ul>
   {{#each model.answers as |answer|}}
   <div class="well">
@@ -18,4 +18,5 @@
     {{answer.comment}}
   </div>
   {{/each}}
+
 </ul>
