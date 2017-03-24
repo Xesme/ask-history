@@ -1,15 +1,15 @@
 {{#if addNewAnswer}}
 <div class="well">
   <form>
-  <div class="form-group">
-    <label for="author">Author:</label>
-    {{input value=author id="author" class="form-control"}}
-  </div>
-  <div class="form-group">
-    <label for="comment">Answer:</label>
-    {{textarea value=comment id="comment" class="form-control"}}
-  </div>
-  <button {{action 'saveAnswer' post}}>Submit</button>
+    <div class="form-group">
+      <label for="author">Author:</label>
+      {{input value=author id="author" class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="comment">Answer:</label>
+      {{textarea value=comment id="comment" class="form-control"}}
+    </div>
+    <button {{action 'saveAnswer' post}}>Submit</button>
   </form>
 </div>
 {{else}}

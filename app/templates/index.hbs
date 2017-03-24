@@ -6,18 +6,6 @@
 <h2>Recent Questions:</h2>
 <ul>
   {{#each model.posts as |post|}}
-    {{post-tile post=post}}
-  {{/each}}
-</ul>
-
-
-<!-- delete this but keep it for testing -->
-<ul>
-  {{#each model.answers as |answer|}}
-  <div class="well">
-    {{answer.author}}
-    <hr>
-    {{answer.comment}}
-  </div>
+  {{post-tile post=post}}
   {{/each}}
 </ul>
