@@ -39,9 +39,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 * `ember build` (development)
 * `ember build --environment production` (production)
 
-### Deploying
+### Action Plan
 
-Specify what it takes to deploy your app.
+* Install npm, bower, ember!
+* Set-up READMe.md
+* Make a plan!
+*
+*
+
 
 ## Further Reading / Useful Links
 
