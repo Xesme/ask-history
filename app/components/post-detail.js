@@ -7,7 +7,7 @@ export default Ember.Component.extend({
         this.sendAction('destroyPost', post);
       }
     },
-    delete(answer){
+    destroyAnswer(answer){
         this.sendAction('destroyAnswer', answer);
       }
   }

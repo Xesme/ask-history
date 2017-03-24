@@ -35,7 +35,7 @@ export default Ember.Route.extend({
     },
 
     destroyAnswer(answer) {
-      post.destroyRecord();
+      answer.destroyRecord();
       this.transitionTo('index');
     },
   }
