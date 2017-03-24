@@ -5,10 +5,8 @@
   "license": "MIT",
   "author": "",
   "directories": {
-    "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -43,5 +41,11 @@
   "engines": {
     "node": ">= 4"
   },
-  "private": true
+  "private": true,
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "ember-bootstrap": "^1.0.0-alpha.8",
+    "emberfire": "^2.0.6"
+  }
 }

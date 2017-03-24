@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
 
   actions: {
-    destroyPost('post') {
+    destroyPost(post) {
       post.destroyRecord();
       this.transitionTo('index');
     }
