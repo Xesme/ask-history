@@ -16,5 +16,6 @@
   <button {{action 'savePost' post}}>Submit</button>
   </form>
 </div>
-{{#else}}
+{{else}}
 <button {{action 'postShowForm' post}}>Add New</button>
+{{/if}}

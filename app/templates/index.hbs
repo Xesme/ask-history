@@ -1,9 +1,12 @@
 <h1>Welcome to Historia! A place where you can ask your questions regarding history. </h1>
 <p>A place where you can ask questions about anything in history!</p>
 
+{{new-post savePost="savePost"}}
+
 <h2>Recent Questions:</h2>
 <ul>
   {{#each model as |post|}}
   {{post-tile post=post destroyPost="destroyPost"}}
   {{/each}}
+
 </ul>
