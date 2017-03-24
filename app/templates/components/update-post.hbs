@@ -13,9 +13,9 @@
       <label for="content">Question:</label>
       {{textarea value=content id="content" placeholder=post.content class="form-control"}}
     </div>
-    <button {{action 'update' post}}>Update</button>
+    <button class="btn btn-primary" {{action 'update' post}}>Update</button>
   </form>
 </div>
 {{else}}
-<button {{action 'updatePostForm' post}}>Update</button>
+<button class="words" {{action 'updatePostForm' post}}>Update</button>
 {{/if}}

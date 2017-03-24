@@ -1,0 +1,32 @@
+.center{
+  text-align: center;
+}
+
+.btn {
+  float: right;
+}
+
+.words {
+  float: right;
+  background-color: #f5f5f5;
+  border: none;
+  font-size: 12px;
+}
+
+.words:hover {
+  color: #f57a00;
+  font-size: 12px;
+}
+
+.well {
+  font-size: 20px;
+  list-style: none;
+}
+
+.orange {
+  color: #f57a00;
+}
+
+.teal:hover {
+  color: #25f6fd;
+}

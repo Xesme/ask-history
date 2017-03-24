@@ -9,9 +9,11 @@
       <label for="comment">Answer:</label>
       {{textarea value=comment id="comment" class="form-control"}}
     </div>
-    <button {{action 'saveAnswer' post}}>Submit</button>
+    <button class="btn btn-primary" {{action 'saveAnswer' post}}>Submit</button>
   </form>
+  <br>
+  <br>
 </div>
 {{else}}
-<button {{action 'answerShowForm' post}}>Answer</button>
+<button class="btn btn-primary" {{action 'answerShowForm' post}}>Answer</button>
 {{/if}}

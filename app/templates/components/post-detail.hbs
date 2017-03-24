@@ -1,17 +1,12 @@
 <div class="well">
-  <div class="author-div">
-    {{post.author}}
-    <hr>
-    <!-- {{post.date}} -->
-  </div>
   <div class="content-div">
     {{post.title}}
     {{post.content}}
   </div>
-  <button {{action 'delete' post}}>Delete Post</button>
+  <button class="words" {{action 'delete' post}}>Delete Post</button>
   <br>
 </div>
-<h2>Answers</h2>
+<h2>Answers:</h2>
 <ul>
   {{#each post.answers as |answer|}}
   {{answer-tile answer=answer destroyAnswer='destroyAnswer'}}

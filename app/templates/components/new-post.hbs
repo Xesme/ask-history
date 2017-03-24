@@ -13,9 +13,11 @@
       <label for="content">Question:</label>
       {{textarea value=content id="content" class="form-control"}}
     </div>
-    <button {{action 'savePost' post}}>Submit</button>
+    <button class="btn btn-primary" {{action 'savePost' post}}>Submit</button>
   </form>
+  <br>
+  <br>
 </div>
 {{else}}
-<button {{action 'postShowForm' post}}>Add New</button>
+<button class="btn btn-primary" {{action 'postShowForm' post}}>Add New</button>
 {{/if}}

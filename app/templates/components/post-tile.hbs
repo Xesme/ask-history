@@ -1,14 +1,15 @@
 {{#link-to 'post' post.id}}
 <div class="well holder">
-  <div class="well">
-    <li>
-      <div class="col-lg-6">
-        Submitted by: {{post.author}}
-      </div>
-      <div class="col-lg-6">
-        Question: {{post.title}}
-      </div>
-    </li>
-  </div>
+  <li>
+    <div class="col-lg-6">
+      <span class="orange">Submitted by: {{post.author}}</span>
+    </div>
+    <div class="col-lg-6">
+      <span class="teal">  Question: {{post.title}}</span>
+    </div>
+  </li>
+  <br>
+  <br>
+  <br>
 </div>
 {{/link-to}}
