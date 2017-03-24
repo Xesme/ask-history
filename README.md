@@ -41,12 +41,89 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Action Plan
 
-* Install npm, bower, ember!
-* Set-up READMe.md
+* Install npm, bower, ember, install bootstrap!
+* Create application template ($ ember g template application)
+* Set-up READMe.me
 * Make a plan!
-*
-*
+* Set up Home route (index)
+* Set up About route (about)
+* Set up Contact route (contact)
+* Create Firebase for project
+* Set up Model (historia(s)(because models are plural fool))
+* Install emberfire ($ ember install emberfire)
+* Add Firebase key to config/environment.js
+* Set-up project.json (historia.json)
+* Import seedling project.json (historia.json) in Firebase
+* Create project-tile ($ ember g component post-tile)
+* Render project-tile within index.hbs using an #each loop
+* Create a export findAll() for model, like this:
 
+  model() {
+    return this.store.findAll('model-name(singular)');
+  },
+
+* Implement Delete {{action}}
+* Create component new-project ($ ember g component new-post)
+* Set up form in new-project.hbs (new-post.hbs)
+* Add action to new-project.js (new-post.js)
+* Don't forget! All of this needs to be added to index.hbs (Data down! Action up!)
+* Add a nav bar with links inside the application .hbs! Also, add a header of some kind with
+  the website name
+* Add to actions: savePost( with it params ) in new-project.js  (new-post.js)
+* Add hide and show of the form! index.hbs, new-project.hbs, and new-project.js
+* Create a component to update-project ($ ember g component update-post)
+* Add it to the project-tile so can d.d.a.a that update
+* Create a form in the update-project.hbs to you can update (don't forget you have to hide
+  and show the form with an action handler)
+* Add to actions: updatePost( with the this.get params) in the update-project.js and send
+  that action up!
+* Add the action to project-tile.js
+* Add the action to index.hbs
+* Add the action to index.js (because this route handler talks to the model and don't forget  
+  to save and transition back home!)
+* Add a dynamic segment so you can view posts by their individual route
+* Add route ($ ember g route post)
+* Got into the router.js and and add a path with the id, like this:
+  this.route('post', {path: '/post/:post_id'});
+* Add a model hook in the exports routes/post.js, like this:
+  model(params) {
+    return this.store.findRecord('post', params.post_id);
+  },
+* REMEMBER when you're on post.hbs you can call this information with {{model.whatever}} this
+  route handler is getting information directly from the model.
+* Create a post-detail ($ ember g component post-detail)
+* It needs a path to be visible on routes/post so don't forget {{post-detail post=model}}
+* Set up post-detail.hbs, refactor some code and move the delete button over here
+* Add to the actions: delete in post-detail.js
+_* Only the action helper {{savePost}} should be on index.hbs at this point*_
+* Add a new model for comments ($ ember g model comments)
+* Refactor the exports findAll() in index.js
+* Add comments to project.json file and import it to Firebase
+* Start by pulling the model through index.hbs to make sure your are accessing the  
+  information correctly before creating components and refactoring (This serves as a tool don't skip it)
+* Add compnent new-comment ($ ember g component new-comment)
+* Add form for new comment (with hide and show!)
+* Add to actions: saveComment( with params )
+* Add to actions in index.js, so it can be save to the models
+* Actions up! it needs to be added to index.hbs too
+* Add async in both models to join them
+* Implement refactor to .hbs
+* Implement comment deletion
+* Implement Styling
+
+
+* Set up routes
+  routes needed for phase 1:
+    about.js
+    contact.js
+    index.js
+ * Set up components
+  components needed for phase 1:
+    post (.js, .hbs)
+    post-tile (.js, .hbs)
+    post-detail (.js, .hbs)
+    new-post (.js, .hbs)
+    update-post(.js, .hbs)
 
 ## Further Reading / Useful Links
 
