@@ -7,4 +7,5 @@ export default Ember.Component.extend({
         this.sendAction('destroyPost', post);
       }
     }
+  }
 });
