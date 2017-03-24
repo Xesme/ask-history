@@ -1,7 +1,7 @@
 {{update-post update='update' post=model}}
 <h2>{{model.author}}'s post</h2>
 
-{{post-detail post=model destroyPost="destroyPost"}}
+{{post-detail post=model destroyPost="destroyPost" destroyAnswer="destroyAnswer"  }}
 
 
 {{new-answer saveAnswer="saveAnswer" post=model}}
