@@ -10,5 +10,10 @@
   </div>
   <button {{action 'delete' post}}>Delete Post</button>
   <br>
-  {{update-post update='update' post=post}}
 </div>
+<h2>Answers</h2>
+<ul>
+{{#each post.answers as |answer|}}
+{{answer-tile answer=answer}}
+{{/each}}
+</ul>
