@@ -48,11 +48,14 @@ Make use of the many generators for code, try `ember help generate` for more det
 * Set up Home route (index)
 * Set up About route (about)
 * Set up Contact route (contact)
+* Add a nav bar with links inside the application .hbs! Also, add a header of some kind with
+the website name
 * Create Firebase for project
-* Set up Model (historia(s)(because models are plural fool))
-* Install emberfire ($ ember install emberfire)
+* Update rules for FireBase project
 * Add Firebase key to config/environment.js
+* Set up Model (post(remember models are plural in some cases))
 * Set-up project.json (historia.json)
+* Install emberfire ($ ember install emberfire)
 * Import seedling project.json (historia.json) in Firebase
 * Create project-tile ($ ember g component post-tile)
 * Render project-tile within index.hbs using an #each loop
@@ -67,8 +70,6 @@ Make use of the many generators for code, try `ember help generate` for more det
 * Set up form in new-project.hbs (new-post.hbs)
 * Add action to new-project.js (new-post.js)
 * Don't forget! All of this needs to be added to index.hbs (Data down! Action up!)
-* Add a nav bar with links inside the application .hbs! Also, add a header of some kind with
-  the website name
 * Add to actions: savePost( with it params ) in new-project.js  (new-post.js)
 * Add hide and show of the form! index.hbs, new-project.hbs, and new-project.js
 * Create a component to update-project ($ ember g component update-post)
