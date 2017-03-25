@@ -1,7 +1,6 @@
-# ask-history
+# Historia!
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Historia is a website that provides users with the ability to post or answer questions. It was created March 24, 2017 in Portland, Oregon.
 
 ## Prerequisites
 
@@ -111,20 +110,7 @@ _* Only the action helper {{savePost}} should be on index.hbs at this point*_
 * Implement refactor to .hbs
 * Implement answer deletion
 * Implement Styling
-
-
-* Set up routes
-  routes needed for phase 1:
-    about.js
-    contact.js
-    index.js
- * Set up components
-  components needed for phase 1:
-    post (.js, .hbs)
-    post-tile (.js, .hbs)
-    post-detail (.js, .hbs)
-    new-post (.js, .hbs)
-    update-post(.js, .hbs)
+* Update README.md
 
 ## Further Reading / Useful Links
 
@@ -133,3 +119,8 @@ _* Only the action helper {{savePost}} should be on index.hbs at this point*_
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Licensing
+ This application features MIT licensing.
+
+Copyright &copy; 2017 **Xia Amendolara** All Rights Reserved.
